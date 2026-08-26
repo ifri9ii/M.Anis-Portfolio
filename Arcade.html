@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Arcade | M.ANIS</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+ <nav>
+    <a class="logo" href="index.html"> <span>&lt;</span>M.ANIS <span>/&gt;</span></a>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="Arcade.html" class="active">Arcade</a></li>
+        <li><button id="theme-toggle" class="theme-toggle" type="button" aria-label="Toggle dark and light mode">🌙</button></li>
+    </ul>
+</nav>
+</header>
+
+<main class="arcade">
+    <div class="portfolio-container arcade-heading">
+        <div class="subtitle">INTERACTIVE ZONE</div>
+        <h1 class="title">The Arcade</h1>
+        <p class="description">Play two JavaScript mini-games built with functions, arrays, DOM events, conditional logic and game state.</p>
+    </div>
+
+    <section class="games-grid">
+
+        <article class="game-card">
+            <h2>🎲 Dice Game</h2>
+            <p class="game-description">Test your luck against Player 2.</p>
+            <p id="dice-result" class="game-result">🤝 It's a Draw!</p>
+
+            <div class="score-board">
+                <div><span>YOU</span><strong id="player-score">0</strong></div>
+                <div><span>PLAYER 2</span><strong id="computer-score">0</strong></div>
+            </div>
+
+            <div class="players">
+                <div class="player">
+                    <h3>YOU</h3>
+                    <div id="dice1" class="dice">
+                        <span class="dot d1"></span><span class="dot d2"></span><span class="dot d3"></span>
+                        <span class="dot d4"></span><span class="dot d5"></span><span class="dot d6"></span>
+                    </div>
+                </div>
+                <div class="player">
+                    <h3>PLAYER 2</h3>
+                    <div id="dice2" class="dice">
+                        <span class="dot d1"></span><span class="dot d2"></span><span class="dot d3"></span>
+                        <span class="dot d4"></span><span class="dot d5"></span><span class="dot d6"></span>
+                    </div>
+                </div>
+            </div>
+
+            <button id="rollButton" class="game-button" type="button">Roll Dice 🎲</button>
+            <button id="reset-dice" class="reset-button" type="button">Reset Game</button>
+        </article>
+
+        <article class="game-card">
+            <h2>🧠 Simon Says</h2>
+            <p class="game-description">Watch the sequence and repeat it.</p>
+
+            <div class="simon-info">
+                <span>Level: <strong id="level">1</strong></span>
+                <span>Score: <strong id="simon-score">0</strong></span>
+            </div>
+
+            <div class="simon-board">
+                <button class="simon-button green" data-color="green" type="button" aria-label="Green"></button>
+                <button class="simon-button red" data-color="red" type="button" aria-label="Red"></button>
+                <button class="simon-button yellow" data-color="yellow" type="button" aria-label="Yellow"></button>
+                <button class="simon-button blue" data-color="blue" type="button" aria-label="Blue"></button>
+            </div>
+
+            <p id="simon-message" class="simon-message">Click Start or press any key to play!</p>
+            <button id="start-simon" class="game-button" type="button" style="margin-top: 15px;">Start Game 🎮</button>
+            <button id="reset-simon" class="reset-button" type="button">Reset Game</button>
+        </article>
+
+    </section>
+</main>
+
+<script src="index.js"></script>
+</body>
+</html>

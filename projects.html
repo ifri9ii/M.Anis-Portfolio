@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - Selected Achievements</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a class="logo" href="index.html"><span>&lt;</span>M.ANIS <span>/&gt;</span></a>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="projects.html" class="active">Projects</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="Arcade.html">Arcade</a></li>
+                <li><button id="theme-toggle" class="theme-toggle" type="button" aria-label="Toggle dark and light mode">🌙</button></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="portfolio-container">
+        <div class="subtitle">ENTERPRISE ENGINEERING</div>
+        <h1 class="title">Selected Achievements</h1>
+        <p class="description">A showcase of automated tooling, monitoring systems, and backend platforms built to secure and scale high-volume systems.</p>
+
+        <!-- أزرار التصفية -->
+        <div class="filter-container">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="web">Web Apps</button>
+            <button class="filter-btn" data-filter="game">Games</button>
+        </div>
+
+        <div class="projects-grid">
+            
+            <!-- Project 1: Web App -->
+            <div class="project-card" data-category="web">
+                <div class="project-image"><span>img project img</span></div>
+                <div class="tags-container">
+                    <span class="tag">PYTHON</span>
+                    <span class="tag">AI / NLP</span>
+                    <span class="tag">WEB APP</span>
+                </div>
+                <h3 class="project-title">AI-Powered Log Analyzer</h3>
+                <p class="project-text">An advanced log analysis engine enabling AI-assisted anomaly pattern detection and log classification.</p>
+                <a href="#" class="project-link">View Project Details ➔</a>
+            </div>
+
+            <!-- Project 2: Web App -->
+            <div class="project-card" data-category="web">
+                <div class="project-image"><span>img project img</span></div>
+                <div class="tags-container">
+                    <span class="tag">GRAFANA</span>
+                    <span class="tag">OBSERVABILITY</span>
+                </div>
+                <h3 class="project-title">CRM Monitoring & Alerting</h3>
+                <p class="project-text">Real-time metrics dashboards across CRM production servers featuring automated alerting queues.</p>
+                <a href="#" class="project-link">View Project Details ➔</a>
+            </div>
+
+            <!-- Project 3: Game -->
+            <div class="project-card" data-category="game">
+                <div class="project-image"><span>img project img</span></div>
+                <div class="tags-container">
+                    <span class="tag">JAVASCRIPT</span>
+                    <span class="tag">GAME DEV</span>
+                </div>
+                <h3 class="project-title">Dice Roll Battle</h3>
+                <p class="project-text">Interactive two-player dice rolling game built with DOM animation and random state logic.</p>
+                <a href="Arcade.html" class="project-link">Play Game ➔</a>
+            </div>
+
+            <!-- Project 4: Web App -->
+            <div class="project-card" data-category="web">
+                <div class="project-image"><span>img project img</span></div>
+                <div class="tags-container">
+                    <span class="tag">PHP</span>
+                    <span class="tag">MYSQL</span>
+                </div>
+                <h3 class="project-title">ITM ASP Platform</h3>
+                <p class="project-text">A secure internal web application designed to automate corporate task tracking and employee work schedules.</p>
+                <a href="#" class="project-link">View Project Details ➔</a>
+            </div>
+
+            <!-- Project 5: Game -->
+            <div class="project-card" data-category="game">
+                <div class="project-image"><span>img project img</span></div>
+                <div class="tags-container">
+                    <span class="tag">JAVASCRIPT</span>
+                    <span class="tag">SIMON SAYS</span>
+                </div>
+                <h3 class="project-title">Simon Says Memory Challenge</h3>
+                <p class="project-text">Classic pattern memory game with level tracking, visual sequence highlights, and score state.</p>
+                <a href="Arcade.html" class="project-link">Play Game ➔</a>
+            </div>
+
+            <!-- Project 6: Web App -->
+            <div class="project-card" data-category="web">
+                <div class="project-image"><span>img project img</span></div>
+                <div class="tags-container">
+                    <span class="tag">JAVA</span>
+                    <span class="tag">SECURITY</span>
+                </div>
+                <h3 class="project-title">Exam-IO Portal</h3>
+                <p class="project-text">An encrypted academic portal facilitating secure remote examination management and candidate authorization.</p>
+                <a href="#" class="project-link">View Project Details ➔</a>
+            </div>
+
+        </div>
+    </main>
+
+    <script src="index.js"></script>
+</body>
+</html>
